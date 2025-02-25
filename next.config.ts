@@ -6,7 +6,7 @@ const nextConfig = {
         ];
     },
     images:{
-        domains: ['images.unsplash.com',"pixabay.com","cloud.appwrite.io"],
+        domains: ['images.unsplash.com',"pixabay.com","cloud.appwrite.io","avatar.vercel.sh"],
     },
 };
 
