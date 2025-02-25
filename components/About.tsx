@@ -24,7 +24,7 @@ const About = () => {
         <section className="dark:bg-neutral-900">
             {/* Hero Section */}
             <div className="relative h-[60vh] flex items-center justify-center text-white text-center bg-cover bg-center"
-                 style={{ backgroundImage: "url('https://pixabay.com/get/g66395eb18d31ef0967f90aad4a538efc5a8a2426b8805eaa20a87ce11515eeed37f762f244488170f2cefa23ec7f5cb6639fcddf6d5b0b8e8b734609e404f70d_1280.jpg')" }}>
+                 style={{ backgroundImage: "url('/images/passport-de.jpg')" }}>
                 <motion.div
                     initial={{ opacity: 0, y: -30 }}
                     animate={{ opacity: 1, y: 0 }}
@@ -43,7 +43,7 @@ const About = () => {
                     transition={{ duration: 0.8 }}
                     className="grid md:grid-cols-2 gap-12 items-center"
                 >
-                    <Image src="https://pixabay.com/get/gef0540fff8aea82d0f1595c0ccaf5f48b6fe407d02159aff90cc81efab648e72845b6fc96391fb1be3f4d77d560ad0aa94b7c35d6ba846500527b5a27336d3c1_1280.jpg" width={600} height={400} alt="About Us" className="rounded-lg shadow-lg" />
+                    <Image src="/images/jef.jpg" width={600} height={400} alt="About Us" className="rounded-lg shadow-lg" />
                     <div>
                         <h2 className="text-3xl font-semibold text-gray-400">Who We Are</h2>
                         <p className="mt-4 text-gray-600">
