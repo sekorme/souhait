@@ -1,7 +1,6 @@
 import React from 'react'
 import {MorphingTextDemo} from "@/components/MorphinTextDemo";
-import {Button} from "@/components/ui/button";
-import {AuroraText} from "@/components/magicui/aurora-text";
+
 import {RainbowButton} from "@/components/magicui/rainbow-button";
 
 

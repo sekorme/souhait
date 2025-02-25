@@ -2,6 +2,7 @@
 
 import { motion, AnimatePresence } from "framer-motion";
 import { useEffect, useState } from "react";
+import Image from "next/image"
 
 const images = [
     "https://pixabay.com/get/g5686325f0b4f08c92b1ae4f24d604c7da104ecd7a989061dec77e7b87a6a081d0334e18b6f447267261e6c02d7ba8155cc1212106ff2322d6349c3126984aa39_1280.jpg",
@@ -54,7 +55,7 @@ const Hero = () => {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 1 }}
                     className="z-[-3]">
-                    <img src="/logo/sta.png" alt="Logo" width={300} height={300}/>
+                    <Image src="/logo/sta.png" alt="Logo" width={300} height={300}/>
                 </motion.div>
                 <motion.h1
                     initial={{ opacity: 0, y: -30 }}
