@@ -36,6 +36,7 @@ export const ImagesSlider = ({
     );
   };
 
+
   useEffect(() => {
     loadImages();
   }, []);
@@ -50,6 +51,7 @@ export const ImagesSlider = ({
         img.onerror = reject;
       });
     });
+
 
     Promise.all(loadPromises)
       .then((loadedImages) => {
@@ -70,8 +72,9 @@ export const ImagesSlider = ({
     window.addEventListener("keydown", handleKeyDown);
 
     // autoplay
-    let interval: any;
+    let interval :number | undefined;
     if (autoplay) {
+      // @ts-expect-error
       interval = setInterval(() => {
         handleNext();
       }, 5000);
