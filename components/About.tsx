@@ -47,7 +47,7 @@ const About = () => {
                     <div>
                         <h2 className="text-3xl font-semibold text-gray-400">Who We Are</h2>
                         <p className="mt-4 text-gray-600">
-                            Souhait Travel Advisors is an **online consultation platform** that helps individuals navigate their journey to the **USA, Canada, and Europe** affordably. We eliminate unnecessary intermediaries, providing **direct, reliable, and cost-effective** guidance for visa applications, job opportunities, and travel arrangements.
+                            Souhait Travel Advisors is an online consultation platform that helps individuals navigate their journey to the USA, Canada, and Europe affordably. We eliminate unnecessary intermediaries, providing direct, reliable, and cost-effective guidance for visa applications, job opportunities, and travel arrangements.
                         </p>
                     </div>
                 </motion.div>
@@ -61,7 +61,7 @@ const About = () => {
                 >
                     <h2 className="text-3xl font-semibold text-gray-400">Our Mission & Vision</h2>
                     <p className="mt-4 text-gray-600 max-w-3xl mx-auto">
-                        Our mission is to **simplify the travel and immigration process**, ensuring our clients can secure visas and job placements with **minimal cost and maximum success**. We believe in a world where people can chase their dreams without unnecessary financial burdens.
+                        Our mission is to simplify the travel and immigration process, ensuring our clients can secure visas and job placements with minimal cost and maximum success. We believe in a world where people can chase their dreams without unnecessary financial burdens.
                     </p>
                 </motion.div>
 
@@ -119,7 +119,7 @@ const About = () => {
                 >
                     <h2 className="text-3xl font-semibold">Why Choose Souhait Travel Advisors?</h2>
                     <p className="mt-4 text-lg">
-                        We provide **reliable** and **affordable** visa consultation and job opportunities without **middlemen fees**. Our experts ensure your applications have **high success rates** while saving you **time and money**.
+                        We provide reliable and affordable visa consultation and job opportunities without **middlemen fees**. Our experts ensure your applications have high success rates while saving you time and money.
                     </p>
                     <button className="mt-6 px-6 py-3 bg-white text-blue-600 rounded-full font-semibold hover:bg-gray-200 transition">
                         Get Started

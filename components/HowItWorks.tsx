@@ -59,7 +59,7 @@ const HowItWorks = () => {
                     transition={{ delay: 0.2, duration: 0.6 }}
                     className="text-gray-500 text-lg mb-12"
                 >
-                    Follow these simple steps to start your journey abroad with **Souhait Travel Advisors**.
+                    Follow these simple steps to start your journey abroad with Souhait Travel Advisors.
                 </motion.p>
 
                 {/* Bouncing Steps */}
