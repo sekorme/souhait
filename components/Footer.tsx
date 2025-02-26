@@ -4,20 +4,20 @@ import { Facebook, Twitter, Instagram, Mail, Phone, MapPin } from "lucide-react"
 
 const Footer = () => {
     return (
-        <footer className="bg-gray-900 text-gray-300 py-10">
+        <footer className="dark:bg-neutral-800 border-t-4 border-[#ff3d57] rounded-2xl py-10">
             <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-3 gap-8">
 
                 {/* Company Info */}
                 <div>
-                    <h2 className="text-2xl font-bold text-white">Souhait Travel Advisors</h2>
-                    <p className="mt-3 text-gray-400">
+                    <h2 className="text-2xl font-bold text-[#ff3d57]">Souhait Travel Advisors</h2>
+                    <p className="mt-3 ">
                         Helping you travel smart and secure your future abroad with expert visa and job consultation.
                     </p>
                 </div>
 
                 {/* Quick Links */}
                 <div>
-                    <h3 className="text-xl font-semibold text-white">Quick Links</h3>
+                    <h3 className="text-xl font-semibold ">Quick Links</h3>
                     <ul className="mt-3 space-y-2">
                         <li><a href="#" className="hover:text-blue-500">Home</a></li>
                         <li><a href="#" className="hover:text-blue-500">About Us</a></li>
