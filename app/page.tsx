@@ -9,6 +9,7 @@ import {AnimatedTestimonialsDemo} from "@/components/AnimatedTes";
 import WhyChooseUs from "@/components/WhyChooseUs";
 import HowItWorks from "@/components/HowItWorks";
 import Footer from "@/components/Footer";
+import FAQ from "@/components/Faq";
 
 
 
@@ -20,6 +21,7 @@ export default function Home() {
      <Testimonials/>
        <HowItWorks/>
        <AnimatedTestimonialsDemo/>
+       <FAQ/>
        <OrbitingCirclesDemo/>
       <Footer/>
    </main>
