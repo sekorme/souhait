@@ -1,5 +1,5 @@
 
-import {OrbitingCirclesDemo} from "@/components/OrbitCircle";
+
 
 
 import Hero from "@/components/HeroFour";
@@ -11,6 +11,8 @@ import HowItWorks from "@/components/HowItWorks";
 import Footer from "@/components/Footer";
 import FAQ from "@/components/Faq";
 
+import {LayoutGridDemo} from "@/components/LayoutGridDemo";
+
 
 
 export default function Home() {
@@ -18,11 +20,12 @@ export default function Home() {
    <main className={"   "}>
      <Hero/>
        <WhyChooseUs/>
+       <LayoutGridDemo/>
      <Testimonials/>
        <HowItWorks/>
        <AnimatedTestimonialsDemo/>
        <FAQ/>
-       <OrbitingCirclesDemo/>
+
       <Footer/>
    </main>
   );
