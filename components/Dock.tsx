@@ -79,7 +79,7 @@ const DATA = {
 
             email: {
                 name: "Send Email",
-                url: "#",
+                url: "/sign-in",
                 icon: Icons.email,
             },
         },
