@@ -7,6 +7,7 @@ const Dashboard = () => {
 
     const handleSignOut = async () => {
         await signOutUser();
+        window.location.reload()
     };
     return (
         <div>

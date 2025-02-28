@@ -6,6 +6,7 @@ import "./globals.css";
 import {ThemeProvider} from "@/components/theme-provider";
 import {DockDemo} from "@/components/Dock";
 import Head from "next/head";
+import {getCurrentUser} from "@/lib/actions/users.actions";
 
 
 const geistSans = Geist({
@@ -55,6 +56,7 @@ export default async function RootLayout({
   children: React.ReactNode;
 }>) {
 
+    const currentUser = await getCurrentUser();
 
 
   return (
@@ -83,9 +85,12 @@ export default async function RootLayout({
             <main className="w-full    flex-grow ">
                 {children}
             </main>
+            { !currentUser ? (
             <footer className={"fixed w-full z-1050 flex items-center justify-center py-3"}>
                 <DockDemo/>
-            </footer>
+            </footer>) : (<h1 className={"text-2xl text-green-500"}>NavBar</h1>)
+            }
+
         </div>
       </ThemeProvider>
 

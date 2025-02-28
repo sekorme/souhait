@@ -76,7 +76,7 @@ const cards = [
         content: <SkeletonOne />,
         className: "md:col-span-1",
         thumbnail:
-            "/images/hiro4.jpg",
+            "/images/hiro11.jpg",
     },
     {
         id: 2,
@@ -104,7 +104,7 @@ const cards = [
         content: <SkeletonFour />,
         className: "md:col-span-1",
         thumbnail:
-            "/images/hiro5.jpg",
+            "/images/hiro12.jpg",
     },
     {
         id: 6,
@@ -118,7 +118,7 @@ const cards = [
         content: <SkeletonFour />,
         className: "md:col-span-1",
         thumbnail:
-            "/images/hiro8.jpg",
+            "/images/hiro5.jpg",
     },
     {
         id: 8,
@@ -126,5 +126,20 @@ const cards = [
         className: "md:col-span-1",
         thumbnail:
             "/images/hiro9.jpg",
+    },
+
+    {
+        id: 9,
+        content: <SkeletonFour />,
+        className: "md:col-span-1",
+        thumbnail:
+            "/images/hiro8.jpg",
+    },
+    {
+        id: 10,
+        content: <SkeletonFour />,
+        className: "md:col-span-1",
+        thumbnail:
+            "/images/hiro4.jpg",
     },
 ];
