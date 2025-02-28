@@ -69,7 +69,7 @@ const OtpModal = ({
                     <AlertDialogDescription
                         className={"subtitle-2 text-center text-light-100"}
                     >
-                        we've sent an OTP to your email address (
+                        we&#39;ve sent an OTP to your email address (
                         <span className={"pl-1 text-brand"}>{email}</span>)
                     </AlertDialogDescription>
                 </AlertDialogHeader>
@@ -103,7 +103,7 @@ const OtpModal = ({
                         </AlertDialogAction>
 
                         <div className={"subtitle-2 mt-2 text-center text-light-100"}>
-                            Didn't get a code ?
+                            Didn&#39;t get a code ?
                             <Button
                                 type={"button"}
                                 variant={"link"}

@@ -6,8 +6,7 @@ import "./globals.css";
 import {ThemeProvider} from "@/components/theme-provider";
 import {DockDemo} from "@/components/Dock";
 import Head from "next/head";
-import {getCurrentUser} from "@/lib/actions/users.actions";
-import {redirect} from "next/navigation";
+
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
