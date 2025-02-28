@@ -7,6 +7,7 @@ import {ThemeProvider} from "@/components/theme-provider";
 import {DockDemo} from "@/components/Dock";
 import Head from "next/head";
 import {getCurrentUser} from "@/lib/actions/users.actions";
+import BottomNavbar from "@/components/BottomNavbar";
 
 
 const geistSans = Geist({
@@ -88,7 +89,7 @@ export default async function RootLayout({
             { !currentUser ? (
             <footer className={"fixed w-full z-1050 flex items-center justify-center py-3"}>
                 <DockDemo/>
-            </footer>) : (<h1 className={"text-2xl text-green-500"}>NavBar</h1>)
+            </footer>) : (<BottomNavbar/>)
             }
 
         </div>

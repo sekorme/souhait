@@ -7,7 +7,7 @@ const Layout = async({children}:{children:React.ReactNode}) => {
 
     if (!currentUser) return redirect("/sign-in");
     return (
-        <div className={"mt-20 py-20"}>{children}</div>
+        <div className={""}>{children}</div>
     )
 }
 export default Layout
