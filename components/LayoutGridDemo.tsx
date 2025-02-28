@@ -5,7 +5,7 @@ import {LayoutGrid} from "@/components/ui/layout-grid";
 
 export function LayoutGridDemo() {
     return (
-        <div className="h-screen py-5 dark:bg-neutral-800 w-full">
+        <div className="h-full py-5 dark:bg-neutral-800 w-full">
             <LayoutGrid cards={cards} />
         </div>
     );
@@ -123,7 +123,7 @@ const cards = [
     {
         id: 8,
         content: <SkeletonFour />,
-        className: "md:col-span-1",
+        className: "md:col-span-1 h-full",
         thumbnail:
             "/images/hiro9.jpg",
     },
@@ -141,5 +141,20 @@ const cards = [
         className: "md:col-span-1",
         thumbnail:
             "/images/hiro4.jpg",
+    },
+
+    {
+        id: 11,
+        content: <SkeletonFour />,
+        className: "md:col-span-1",
+        thumbnail:
+            "/images/hiro13.jpg",
+    },
+    {
+        id: 12,
+        content: <SkeletonFour />,
+        className: "md:col-span-1",
+        thumbnail:
+            "/images/hiro14.jpg",
     },
 ];
