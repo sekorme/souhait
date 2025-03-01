@@ -10,6 +10,7 @@ import {getCurrentUser} from "@/lib/actions/users.actions";
 import BottomNavbar from "@/components/BottomNavbar";
 
 
+
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -21,8 +22,15 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+    applicationName: "Souhait Travel Advisors",
     title: "Souhait Travel Advisors - Visa & Job Consultation",
     description: "Get expert guidance for visas and job applications in the USA, Canada, and Europe. Save money by avoiding middlemen and secure your future.",
+    manifest:"/manifest.json",
+    appleWebApp:{
+        capable: true,
+        statusBarStyle: "default",
+        title: "Souhait Travel Advisors",
+    },
     metadataBase: new URL("https://souhaittraveladvisors.com"),
     openGraph: {
         title: "Souhait Travel Advisors - Visa & Job Consultation",
@@ -82,6 +90,7 @@ export default async function RootLayout({
           enableSystem
           disableTransitionOnChange
       >
+
         <div className="relative flex flex-col h-screen">
             <main className="w-full    flex-grow ">
                 {children}

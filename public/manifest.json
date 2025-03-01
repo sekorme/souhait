@@ -1,0 +1,21 @@
+{
+  "name": "Souhait Travel Advisors",
+  "short_name": "STA",
+  "description": "Your trusted travel and job consulting platform",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#ff3d57",
+  "icons": [
+    {
+      "src": "/icons/196.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/icons/512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
