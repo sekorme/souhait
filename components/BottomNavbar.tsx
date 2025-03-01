@@ -4,12 +4,14 @@ import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { Home, Briefcase, MessageSquare, User } from "lucide-react";
 import Link from "next/link";
+import {ModeToggle} from "@/components/ModeToggle";
 
 const navItems = [
     { name: "Home", href: "/dashboard", icon: Home },
     { name: "My Jobs", href: "/jobs", icon: Briefcase },
     { name: "Messages", href: "/messages", icon: MessageSquare },
     { name: "Profile", href: "/profile", icon: User },
+
 ];
 
 const BottomNavbar = () => {
@@ -29,7 +31,7 @@ const BottomNavbar = () => {
     };
 
     return (
-        <nav className="fixed bottom-0 left-0 w-full dark:bg-neutral-800 border-t-4 rounded-t-2xl border-[#ff3d57] shadow-lg  flex justify-around py-3 z-50">
+        <nav className="fixed bottom-0 bg-white left-0 w-full dark:bg-neutral-800 border-t-4 rounded-t-2xl border-[#ff3d57] shadow-lg  flex justify-around py-3 z-50">
             {navItems.map((item) => {
                 const isActive = active === item.href;
                 return (
@@ -59,6 +61,10 @@ const BottomNavbar = () => {
                     </Link>
                 );
             })}
+            <div>
+            <ModeToggle/>
+                <p className={"text-xs text-gray-500"}>Theme</p>
+            </div>
         </nav>
     );
 };

@@ -111,7 +111,7 @@ const JobListings = () => {
                     jobs.map((job) => (
                         <li
                             key={job.id}
-                            className="p-4 border rounded-lg shadow-sm cursor-pointer hover:bg-neutral-800 transition"
+                            className="p-4 border rounded-lg shadow-sm cursor-pointer dark:hover:bg-neutral-800 transition"
                             onClick={() => setSelectedJob(job)}
                         >
                             <h2 className="font-semibold text-lg flex items-center">
