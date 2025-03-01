@@ -17,7 +17,7 @@ interface Job {
 }
 
 interface Props {
-    job: Job | null;
+    job: Job | "";
     onClose: () => void;
 }
 
@@ -30,7 +30,7 @@ const JobDetailsModal: React.FC<Props> = ({ job, onClose }) => {
                 initial={{ scale: 0.8, opacity: 0 }}
                 animate={{ scale: 1, opacity: 1 }}
                 exit={{ scale: 0.8, opacity: 0 }}
-                className=" rounded-lg p-6 max-w-lg w-full shadow-lg relative"
+                className=" rounded-lg bg-neutral-800 p-6 max-w-lg w-full shadow-lg relative"
             >
                 <button
                     className="absolute top-2 right-2  hover:text-red-500"
@@ -44,7 +44,7 @@ const JobDetailsModal: React.FC<Props> = ({ job, onClose }) => {
 
                 {job.salary_min && (
                     <p className="text-green-600 font-semibold">
-                        Salary: {job.salary_min} - {job.salary_max} {job.salary_currency}
+                        Salary: ${job.salary_min} - &{job.salary_max} {job.salary_currency}
                     </p>
                 )}
 
@@ -62,7 +62,7 @@ const JobDetailsModal: React.FC<Props> = ({ job, onClose }) => {
                 )}
 
                 {/* Display apply link if available */}
-                {job.apply_link && (
+
                     <div className="mt-4">
                         <a
                             href={job.apply_link}
@@ -73,7 +73,7 @@ const JobDetailsModal: React.FC<Props> = ({ job, onClose }) => {
                             Apply Now
                         </a>
                     </div>
-                )}
+
 
                 <button
                     onClick={onClose}

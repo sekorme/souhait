@@ -8,11 +8,23 @@ import { motion } from "framer-motion";
 const ADZUNA_API_ID = "6cf3a985";
 const ADZUNA_API_KEY = "85df65836cb63da9c8be340f00b3676e";
 
+interface Job {
+    id: string;
+    title: string;
+    location: {
+        display_name: string;
+    };
+    salary_min?: number;
+    salary_max?: number;
+    salary_currency?: string;
+    description: string; // Added description property
+}
+
 const JobListings = () => {
-    const [jobs, setJobs] = useState([]);
+    const [jobs, setJobs] = useState<Job[]>([]);
     const [loading, setLoading] = useState(false);
-    const [error, setError] = useState("");
-    const [selectedJob, setSelectedJob] = useState(null);
+    const [error, setError] = useState<string | null>(null);
+    const [selectedJob, setSelectedJob] = useState<Job | null>(null);
     const [page, setPage] = useState(1);
 
     // Search filters
@@ -26,7 +38,7 @@ const JobListings = () => {
 
     const fetchJobs = async () => {
         setLoading(true);
-        setError("");
+        setError(null);
         try {
             const query = new URLSearchParams({
                 app_id: ADZUNA_API_ID,
@@ -41,9 +53,12 @@ const JobListings = () => {
 
             const data = await response.json();
             setJobs(data.results || []);
-        } catch (Error) {
-            setError("Failed to fetch jobs");
-            console.log(Error)
+        } catch (error) {
+            if (error instanceof Error) {
+                setError(error.message);
+            } else {
+                setError("An unknown error occurred");
+            }
         } finally {
             setLoading(false);
         }
@@ -81,7 +96,6 @@ const JobListings = () => {
                 </select>
                 <button
                     onClick={fetchJobs}
-                    className="bg-[#ff3d57] text-white px-4 py-2 rounded flex items-center justify-center"
                 >
                     <Search className="w-5 h-5 mr-2" /> Search
                 </button>
@@ -90,12 +104,11 @@ const JobListings = () => {
             {/* Job Listings */}
             {loading && <p className="text-center">Loading jobs...</p>}
             {error && <p className="text-center text-red-500">{error}</p>}
-
             <ul className="space-y-4">
                 {jobs.length === 0 ? (
                     <p>No jobs found.</p>
                 ) : (
-                    jobs.map((job:any) => (
+                    jobs.map((job) => (
                         <li
                             key={job.id}
                             className="p-4 border rounded-lg shadow-sm cursor-pointer hover:bg-neutral-800 transition"
