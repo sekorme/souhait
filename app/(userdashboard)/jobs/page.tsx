@@ -1,8 +1,11 @@
 import React from 'react'
+import JobListings from "@/components/JobListings";
 
 const Page = () => {
     return (
-        <div>jobs</div>
+        <div>
+            <JobListings/>
+        </div>
     )
 }
 export default Page
