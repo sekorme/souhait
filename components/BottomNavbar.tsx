@@ -29,7 +29,7 @@ const BottomNavbar = () => {
     };
 
     return (
-        <nav className="fixed bottom-0 left-0 w-full bg-white shadow-lg border-t flex justify-around py-3 z-50">
+        <nav className="fixed bottom-0 left-0 w-full dark:bg-neutral-800 border-t-4 rounded-t-2xl border-[#ff3d57] shadow-lg  flex justify-around py-3 z-50">
             {navItems.map((item) => {
                 const isActive = active === item.href;
                 return (
